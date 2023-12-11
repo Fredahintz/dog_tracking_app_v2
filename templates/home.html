@@ -40,6 +40,7 @@
 
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class = "container">
     <h1 class ="text-center mt-4 mb-4"> Never Fails Tails Dog Shelter  </h1>
     <img class = "img-fluid" id="banner" src = "https://dogtrackingapp.fredhintz040.repl.co/static/cute_dog.jpg" height=320>
@@ -47,6 +48,10 @@
     <p class = "bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue urna est, nec euismod neque malesuada id. Maecenas sed pharetra est, vehicula auctor est. In pretium, orci sed condimentum dignissim, lectus ligula vestibulum nunc, in molestie velit tortor at turpis. Morbi pulvinar sit amet est quis tincidunt. Ut a luctus nunc. Aenean varius risus ipsum, vel blandit metus fermentum nec. Nullam scelerisque ante rhoncus urna consectetur elementum. Proin volutpat maximus mi nec porttitor. Mauris sed augue quis odio lobortis congue. Curabitur ut ornare sapien. Phasellus non pharetra nunc. Sed malesuada malesuada urna, quis suscipit velit vestibulum vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
     Nulla eget varius massa, non accumsan lectus. Nunc sed feugiat dolor, molestie maximus quam. Nullam ligula libero, vehicula nec laoreet quis, pellentesque eget sem. Vivamus tempus scelerisque ligula vel condimentum. Aenean nec lectus quis enim feugiat lobortis et vel nunc. Sed interdum aliquet tempor. Curabitur ac nisi posuere, tempor dolor id, dictum nunc. Quisque pulvinar dolor sed magna condimentum tincidunt id non diam. Suspendisse nec eleifend diam, in commodo arcu. Duis at augue egestas, laoreet velit vel, accumsan augue. In accumsan varius dignissim. Donec varius eget neque vitae rhoncus. Pellentesque tincidunt mauris et ante hendrerit, ut dignissim sapien sollicitudin. Nullam vel varius urna. </p>
+      <h1 class = "text-center"> Adopting a dog with Never fails Tails </h1>
+      <p class = "bodytext">
+      Nulla eget varius massa, non accumsan lectus. Nunc sed feugiat dolor, molestie maximus quam. Nullam ligula libero, vehicula nec laoreet quis, pellentesque eget sem. Vivamus tempus scelerisque ligula vel condimentum. Aenean nec lectus quis enim feugiat lobortis et vel nunc. Sed interdum aliquet tempor. Curabitur ac nisi posuere, tempor dolor id, dictum nunc. Quisque pulvinar dolor sed magna condimentum tincidunt id non diam. Suspendisse nec eleifend diam, in commodo arcu. Duis at augue egestas, laoreet velit vel, accumsan augue. In accumsan varius dignissim. Donec varius eget neque vitae rhoncus. Pellentesque tincidunt mauris et ante hendrerit, ut dignissim sapien sollicitudin. Nullam vel varius urna </p>
+      <img class = "img-fluid mb-4" src = "https://dogtrackingapp.fredhintz040.repl.co/static/playing_with_dog.jpg" height=320>
       <h2 class = "text-center"> Available dogs </h2>
       <p class = "text-center">
         {% for dog in dogs %}
@@ -54,8 +59,8 @@
         {% endfor %}
         </p>
     <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p> Copyright 2023, Emu of Piety </p>
+      <a href="mailto:fordheinz315@gmail.com" class="btn btn-primary btn-lg">Contact Us</a>
+      {% include 'footer.html' %}
     </div>
   </body>
 </html>
